@@ -50,7 +50,7 @@ EXPOSE 8080
 
 # Setup httpd
 WORKDIR /usr/local/src
-RUN curl -OL https://github.com/ProjectMirador/mirador/releases/download/v2.6.0/build.zip
+RUN curl -OL https://github.com/ProjectMirador/mirador/releases/download/v3.0.0-rc.1.zip
 RUN unzip build.zip
 RUN mv build/mirador /var/www/html/
 ADD index.html /var/www/html/
