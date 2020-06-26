@@ -1,11 +1,11 @@
 {
-    "@context": "http://iiif.io/api/presentation/2/context.json",
+    "@context": "http://iiif.io/api/presentation/3/context.json",
     "@id": "https://example.com/manifest.json",
     "label": "Broken Manifest",
     "@type": "sc:Manifest",
     "sequences": [
         {
-            "@context": "http://iiif.io/api/presentation/2/context.json",
+            "@context": "http://iiif.io/api/presentation/3/context.json",
             "@id": "https://example.com/sequence/1",
             "@type": "sc:Sequence",
             "label": "Current Page Order",

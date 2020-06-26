@@ -1,5 +1,5 @@
 {
-    "@context": "http://iiif.io/api/presentation/2/context.json",
+    "@context": "http://iiif.io/api/presentation/3/context.json",
     "@id": "http://localhost:8888/examples/anno_list.json",
     "@type": "sc:AnnotationList",
     "resources": [

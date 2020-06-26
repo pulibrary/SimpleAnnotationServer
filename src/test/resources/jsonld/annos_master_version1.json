@@ -62,6 +62,6 @@
         }
     ],
     "@id": "http://localhost:8888/annotation/",
-    "@context": "http://iiif.io/api/presentation/2/context.json"
+    "@context": "http://iiif.io/api/presentation/3/context.json"
 
 }

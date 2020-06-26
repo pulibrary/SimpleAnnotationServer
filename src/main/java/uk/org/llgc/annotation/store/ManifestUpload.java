@@ -81,7 +81,7 @@ public class ManifestUpload extends HttpServlet {
 
 		Map<String,Object> tCollection = new HashMap<String,Object>();
 
-		tCollection.put("@context", "http://iiif.io/api/presentation/2/context.json");
+		tCollection.put("@context", "http://iiif.io/api/presentation/3/context.json");
 		tCollection.put("@id", StoreConfig.getConfig().getBaseURI(pReq) + "/annotation//collection/managed.json");
 		tCollection.put("@type", "sc:Collection");
 		tCollection.put("label","Collection of all manifests known by this annotation server");

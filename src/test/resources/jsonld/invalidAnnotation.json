@@ -28,5 +28,5 @@
         "full": "http://dams.llgc.org.uk/iiif/2.0/4642022/canvas/4643036.json"
     },
     "motivation": ["oa:commenting"],
-    "@context": "http://iiif.io/api/presentation/2/context.json"
+    "@context": "http://iiif.io/api/presentation/3/context.json"
 }

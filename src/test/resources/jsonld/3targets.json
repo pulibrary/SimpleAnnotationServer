@@ -1,5 +1,5 @@
 {
-    "@context": "http://iiif.io/api/presentation/2/context.json",
+    "@context": "http://iiif.io/api/presentation/3/context.json",
     "@id": "http://localhost:8888/annotation/1532737161338",
     "@type": "oa:Annotation",
     "motivation": [ "oa:commenting" ],

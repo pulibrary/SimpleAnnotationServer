@@ -70,7 +70,7 @@ public abstract class AbstractRDFStore extends AbstractStoreAdapter {
 	public List<Manifest> getManifests() throws IOException {
 		String tQueryString = "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>" +
 										"select ?manifest ?label ?shortId where {"  +
-										" GRAPH ?graph {?manifest <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iiif.io/api/presentation/2#Manifest> . " +
+										" GRAPH ?graph {?manifest <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iiif.io/api/presentation/3#Manifest> . " +
                                         "               ?manifest <http://www.w3.org/2000/01/rdf-schema#label> ?label ." +
                                         "               ?manifest <http://purl.org/dc/elements/1.1/identifier> ?shortId " +
                                         "}}"; // need to bring back short_id and label
@@ -107,7 +107,7 @@ public abstract class AbstractRDFStore extends AbstractStoreAdapter {
 	public String getManifestId(final String pShortId) throws IOException {
 		String tQueryString = "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>"
 								  + "select ?manifest where { "
-								  + "GRAPH ?graph { ?manifest rdf:type <http://iiif.io/api/presentation/2#Manifest> . "
+								  + "GRAPH ?graph { ?manifest rdf:type <http://iiif.io/api/presentation/3#Manifest> . "
 								  + "?manifest <http://purl.org/dc/elements/1.1/identifier> '" + pShortId + "' "
 								  + "}}";
 
@@ -169,7 +169,7 @@ public abstract class AbstractRDFStore extends AbstractStoreAdapter {
 		QueryExecution tExec = this.getQueryExe(tQueryString);
 
 		Map<String,Object> tAnnotationList = new HashMap<String,Object>();
-		tAnnotationList.put("@context", "http://iiif.io/api/presentation/2/context.json");
+		tAnnotationList.put("@context", "http://iiif.io/api/presentation/3/context.json");
 		tAnnotationList.put("@type", "sc:AnnotationList");
 
 		List<Map<String,Object>> tResources = new ArrayList<Map<String,Object>>();
@@ -277,7 +277,7 @@ public abstract class AbstractRDFStore extends AbstractStoreAdapter {
         this.end();
 		int i = 0;
 		Map<String,Object> tAnnotationList = new HashMap<String,Object>();
-		tAnnotationList.put("@context", "http://iiif.io/api/presentation/2/context.json");
+		tAnnotationList.put("@context", "http://iiif.io/api/presentation/3/context.json");
 		tAnnotationList.put("@type", "sc:AnnotationList");
 
 		List<Map<String,Object>> tResources = new ArrayList<Map<String,Object>>();
@@ -354,7 +354,7 @@ public abstract class AbstractRDFStore extends AbstractStoreAdapter {
 
 	public List<String> getManifestForCanvas(final String pCanvasId) throws IOException {
 		String tQueryString =   "PREFIX oa: <http://www.w3.org/ns/oa#> " +
-										"PREFIX sc: <http://iiif.io/api/presentation/2#> " +
+										"PREFIX sc: <http://iiif.io/api/presentation/3#> " +
 										"PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>" +
 										"PREFIX dcterms: <http://purl.org/dc/terms/>" +
 										"select ?manifest where {" +
@@ -395,7 +395,7 @@ public abstract class AbstractRDFStore extends AbstractStoreAdapter {
 		String tManifestURI = (String)pManifest.get("@id");
 		// Now update any annotations which don't contain a link to this manifest.
 		String tQueryString =   "PREFIX oa: <http://www.w3.org/ns/oa#> " +
-										"PREFIX sc: <http://iiif.io/api/presentation/2#> " +
+										"PREFIX sc: <http://iiif.io/api/presentation/3#> " +
 										"PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>" +
 										"PREFIX dcterms: <http://purl.org/dc/terms/>" +
 										"select distinct ?graph ?canvas {" +

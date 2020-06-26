@@ -62,7 +62,7 @@ if __name__ == "__main__":
         # add list to resource
         annoList = {
                             "@type" : "sc:AnnotationList",
-                            "context": "http://iiif.io/api/presentation/2/context.json",
+                            "context": "http://iiif.io/api/presentation/3/context.json",
                             "resources": json.loads(annoListData)
                         }
         if len(sys.argv) > 4 and sys.argv[4] == 'nlw':

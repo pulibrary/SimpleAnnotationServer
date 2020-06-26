@@ -38,7 +38,7 @@
         "motivation": [
             "oa:commenting"
         ],
-        "@context": "http://iiif.io/api/presentation/2/context.json"
+        "@context": "http://iiif.io/api/presentation/3/context.json"
     },
     {
         "@id": "http://localhost:8080/sas/annotation/1532426031455",
@@ -79,6 +79,6 @@
         "motivation": [
             "oa:commenting"
         ],
-        "@context": "http://iiif.io/api/presentation/2/context.json"
+        "@context": "http://iiif.io/api/presentation/3/context.json"
     }
 ]

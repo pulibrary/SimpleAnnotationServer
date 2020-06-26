@@ -36487,8 +36487,8 @@ return /******/ (function(modules) { // webpackBootstrap
       var versionMap = {
         'http://www.shared-canvas.org/ns/context.json': '1', // is this valid?
         'http://iiif.io/api/presentation/1/context.json': '1',
-        'http://iiif.io/api/presentation/2/context.json': '2',
-        'http://iiif.io/api/presentation/2.1/context.json': '2.1'
+        'http://iiif.io/api/presentation/3/context.json': '2',
+        'http://iiif.io/api/presentation/3.1/context.json': '2.1'
       };
       return versionMap[this.jsonLd['@context']];
     },
@@ -36710,8 +36710,8 @@ return /******/ (function(modules) { // webpackBootstrap
       var versionMap = {
         'http://www.shared-canvas.org/ns/context.json': '1', // is this valid?
         'http://iiif.io/api/presentation/1/context.json': '1',
-        'http://iiif.io/api/presentation/2/context.json': '2',
-        'http://iiif.io/api/presentation/2.1/context.json': '2.1'
+        'http://iiif.io/api/presentation/3/context.json': '2',
+        'http://iiif.io/api/presentation/3.1/context.json': '2.1'
       };
       return versionMap[this.jsonLd['@context']];
     },
@@ -37795,7 +37795,7 @@ return /******/ (function(modules) { // webpackBootstrap
         "name" : annotation.user.name};
 
         var oaAnnotation = {
-          "@context" : "http://iiif.io/api/presentation/2/context.json",
+          "@context" : "http://iiif.io/api/presentation/3/context.json",
           "@id" : String(id),
           "@type" : "oa:Annotation",
           "motivation" : motivation,
@@ -41859,7 +41859,7 @@ $.SimpleASEndpoint = function (options) {
         "chars": resourceText
       });
       return {
-        "@context": "http://iiif.io/api/presentation/2/context.json",
+        "@context": "http://iiif.io/api/presentation/3/context.json",
         "@type": "oa:Annotation",
         "motivation": motivation,
         "resource": resource
@@ -48311,7 +48311,7 @@ $.SearchWithinResults.prototype = {
   /** Get the language to use for displaying the given propertyValue.
    *
    * Uses the algorithm described in
-   * http://iiif.io/api/presentation/2.1/#language-of-property-values
+   * http://iiif.io/api/presentation/3.1/#language-of-property-values
    */
   function getDisplayLanguage(languages, items) {
     var itemLanguages = items.map(function(itm) {

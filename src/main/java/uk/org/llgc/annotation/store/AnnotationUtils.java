@@ -197,7 +197,7 @@ public class AnnotationUtils {
 	}
 
 	public String getExternalContext() {
-		return "http://iiif.io/api/presentation/2/context.json";
+		return "http://iiif.io/api/presentation/3/context.json";
 	}
 
 	@SuppressWarnings("unchecked")
@@ -293,7 +293,7 @@ public class AnnotationUtils {
 
 
 	public Map<String,Object> frameManifest(final Model pManifest) throws JsonLdError, IOException  {
-		final Map<String,Object> tContextJson = (Map<String,Object>)JsonUtils.fromInputStream(new URL("http://iiif.io/api/presentation/2/manifest_frame.json").openStream());
+		final Map<String,Object> tContextJson = (Map<String,Object>)JsonUtils.fromInputStream(new URL("http://iiif.io/api/presentation/3/manifest_frame.json").openStream());
 		return this.frame(pManifest, tContextJson);
 	}
 

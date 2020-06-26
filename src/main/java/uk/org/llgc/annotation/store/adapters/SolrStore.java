@@ -205,7 +205,7 @@ public class SolrStore extends AbstractStoreAdapter implements StoreAdapter {
 		tQuery.set("q", "type:oa\\:Annotation");
 
 		Map<String,Object> tAnnoList = new HashMap<String,Object>();
-		tAnnoList.put("@context", "http://iiif.io/api/presentation/2/context.json");
+		tAnnoList.put("@context", "http://iiif.io/api/presentation/3/context.json");
 		tAnnoList.put("@type", "sc:AnnotationList");
 
 		List tResources = new ArrayList();

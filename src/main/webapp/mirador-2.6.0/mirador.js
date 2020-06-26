@@ -31656,8 +31656,8 @@ if(this.$element.prop("multiple"))this.current(function(d){var e=[];a=[a],a.push
       var versionMap = {
         'http://www.shared-canvas.org/ns/context.json': '1', // is this valid?
         'http://iiif.io/api/presentation/1/context.json': '1',
-        'http://iiif.io/api/presentation/2/context.json': '2',
-        'http://iiif.io/api/presentation/2.1/context.json': '2.1'
+        'http://iiif.io/api/presentation/3/context.json': '2',
+        'http://iiif.io/api/presentation/3.1/context.json': '2.1'
       };
       return versionMap[this.jsonLd['@context']];
     },
@@ -32741,7 +32741,7 @@ if(this.$element.prop("multiple"))this.current(function(d){var e=[];a=[a],a.push
         "name" : annotation.user.name};
 
         var oaAnnotation = {
-          "@context" : "http://iiif.io/api/presentation/2/context.json",
+          "@context" : "http://iiif.io/api/presentation/3/context.json",
           "@id" : String(id),
           "@type" : "oa:Annotation",
           "motivation" : motivation,
@@ -36774,7 +36774,7 @@ if(this.$element.prop("multiple"))this.current(function(d){var e=[];a=[a],a.push
         "chars": resourceText
       });
       return {
-        "@context": "http://iiif.io/api/presentation/2/context.json",
+        "@context": "http://iiif.io/api/presentation/3/context.json",
         "@type": "oa:Annotation",
         "motivation": motivation,
         "resource": resource
@@ -43215,7 +43215,7 @@ $.SearchWithinResults.prototype = {
   /** Get the language to use for displaying the given propertyValue.
    *
    * Uses the algorithm described in
-   * http://iiif.io/api/presentation/2.1/#language-of-property-values
+   * http://iiif.io/api/presentation/3.1/#language-of-property-values
    */
   function getDisplayLanguage(languages, items) {
     var itemLanguages = items.map(function(itm) {

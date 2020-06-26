@@ -1,5 +1,5 @@
 {
-    "@context": "http://iiif.io/api/presentation/2/context.json",
+    "@context": "http://iiif.io/api/presentation/3/context.json",
     "@id": "http://dams.llgc.org.uk/iiif/newspaper/issue/3320640/manifest.json",
     "@type": "sc:Manifest",
     "label": "Cambrian (1804-01-28)",

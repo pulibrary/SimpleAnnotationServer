@@ -5607,7 +5607,7 @@ window.Mirador = window.Mirador || function(config) {
         "name" : annotation.user.name};
 
         var oaAnnotation = {
-          "@context" : "http://iiif.io/api/presentation/2/context.json",
+          "@context" : "http://iiif.io/api/presentation/3/context.json",
           "@id" : String(id),
           "@type" : "oa:Annotation",
           "motivation" : motivation,
@@ -6711,7 +6711,7 @@ window.Mirador = window.Mirador || function(config) {
                   "chars" : resourceText
                 });
                 var oaAnno = {
-                 "@context" : "http://iiif.io/api/presentation/2/context.json",
+                 "@context" : "http://iiif.io/api/presentation/3/context.json",
                  "@type" : "oa:Annotation",
                  "motivation" : motivation,
                  "resource" : resource,
